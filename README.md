@@ -42,8 +42,11 @@ Add it in your root build.gradle at the end of repositories:
 Add dependency in your app module
 
 ``` groovy
+
+	def toast_version = "0.4.0"
+	
 	dependencies {
-	        implementation 'com.github.keithchad:Design-Toast:0.4.0'
+	        implementation "com.github.keithchad:Design-Toast:$toast_version"
 	}
 
 ```
