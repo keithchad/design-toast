@@ -3,7 +3,7 @@
 [![Plartform: Android](https://img.shields.io/badge/Plartform-Android-yellow)](https://www.android.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![API](https://img.shields.io/badge/API-21%2B-orange)](https://android-arsenal.com/api?level=21) 
-[![Download](https://img.shields.io/badge/Download-0.0.4-blue) ](https://jitpack.io/#keithchad/Design-Toast)
+[![toast_version](https://img.shields.io/badge/toast__version-0.4.0-blue) ](https://jitpack.io/#keithchad/Design-Toast)
 
 Design Toast is a custom Toast Library in Android using Java. 
 
