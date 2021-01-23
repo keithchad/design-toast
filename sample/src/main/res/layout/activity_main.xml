@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/buttonSuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="SUCCESS TOAST"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="#53EA5A"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARNING TOAST"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="#FFA726"/>
+
+    <Button
+        android:id="@+id/buttonError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ERROR TOAST"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="#E42C28"/>
+
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFO TOAST"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="#29B6F6"/>
+
+</LinearLayout>
