@@ -23,33 +23,13 @@ public class MainActivity extends AppCompatActivity {
         Button buttonError = findViewById(R.id.buttonError);
         Button buttonInfo = findViewById(R.id.buttonInfo);
 
-        buttonSuccess.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showSuccessToast();
-            }
-        });
+        buttonSuccess.setOnClickListener(v -> showSuccessToast());
 
-        buttonWarning.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showWarningToast();
-            }
-        });
+        buttonWarning.setOnClickListener(v -> showWarningToast());
 
-        buttonError.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showErrorToast();
-            }
-        });
+        buttonError.setOnClickListener(v -> showErrorToast());
 
-        buttonInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showInfoToast();
-            }
-        });
+        buttonInfo.setOnClickListener(v -> showInfoToast());
 
     }
 
