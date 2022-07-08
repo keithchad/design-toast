@@ -1,43 +1,23 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
 }
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'toast-design'
-
-    publishedGroupId = 'in.test.sdk'
-    libraryName = 'toastdesign'
-    artifact = 'toast-design'
-}
-
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+        targetSdkVersion 32
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation project(':design-toast')
 }
